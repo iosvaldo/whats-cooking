@@ -1,14 +1,15 @@
 
-fetch('http://localhost:3000/meals')
-	.then(response => response.json())
-	.then(json => loadRandomMeal(json));
+fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+    .then(response => response.json())
+    // .then(data => console.log(data));
+    .then(data => loadRandomMeal(data));
 
-function loadRandomMeal(meals){
-    // meals.forEach((meal) =>{
-        let detailTitle = document.querySelector('#fotdTitle');
-        detailTitle.innerText = meals[15].strIngredient;
-        // let img = document.querySelector('#image');
-        // img.src = meals[0].strMealThumb;
-        let detailInstructions = document.querySelector('#fotdInstructions');
-        detailInstructions.textContent = meals[15].strDescription;
-    }
+function loadRandomMeal(data){
+    for(meals of data.meals){
+        let mealTitle = document.querySelector('#random-meal-title');
+        mealTitle.textContent = meals.strMeal;
+        let mealImage = document.querySelector('#meal-image');
+        mealImage.src = meals.strMealThumb;
+        let mealDescription = document.querySelector('#random-meal-description');
+        mealDescription.textContent = meals.strDescription;
+}}
