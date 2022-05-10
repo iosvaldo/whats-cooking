@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of page</title>
+    <title>What's Cooking?</title>
+    <script defer src="index.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
-        <h1>Random Recipe Generator</h1>
+        <h1>What's Cooking?</h1>
+        <h4>Random meal ideas for when you're in a pickle</h4>
     </header>
     <nav>
-        <ul></ul>
+        <ul>
+            <li>Submit Feedback</li>
+        </ul>
     </nav>
-    <h1 id="fotd-title"></h1>
-    <h4><img alt="fotd-detail-image"/></h4>
-    <button>Try again!</button>
     <div id="recipes-container"></div>
-    <p>Featured Recipes:</p>
-    <ul id="nav-list">
-        <li><img alt="recipe-image1"/>*Title of recipe 1*</li> <!---click on recipe and instructions will pop up-->
-        <li><img alt="recipe-image2"/>*Title of recipe 1*</li>
-        <li><img alt="recipe-image3"/>*Title of recipe 1*</li>
+    
+    <h1 id="fotdTitle">Meal name goes here</h1>
+    <h4><img id="image" alt="fotd-detail-image" src="www.themealdb.com/images/ingredients/Lime.png"/>Image</h4>
+    <button>LIKE THIS RECIPE</button><!---click on recipe and instructions will pop up. toggle-->
+    <ul>
+        <li>View Ingredients</li>
+        <li>View Cooking Instructions</li>
     </ul>
-    <!---below detail, add form where you can add a review and rate it out of 5 stars. user submissions will show up immediately-->
-    <!---sign up for our mailing list-->
     </body>
     </html>
