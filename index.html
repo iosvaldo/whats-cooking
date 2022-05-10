@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's Cooking?</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="index.js" type="text/javascript"></script>
 </head>
 <body>
@@ -12,69 +13,26 @@
         <h1>What's Cooking?</h1>
         <h3>Random meal ideas for when you're waffling</h3>
     </header>
-    <style>
-        body{
-            margin: 20px;
-        }
-
-        header{
-            text-align: center;
-            font-family: fantasy;
-        }
-
-        #recipes-container{
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        ul{
-            list-style-type: none;
-        }
-
-        footer{
-            text-align: center;
-        }
-
-        #image-container{
-            width: 400px;
-            height: 400px;
-            border: 1px solid black;
-            display: inline;
-        }
-
-        img{
-            align-items: center;
-            text-align: center;
-        }
-
-        #footer-list{
-            padding-top: 20px;
-            padding-bottom: 10px;
-        }
-
-        footer li{
-            background-color: cornflowerblue;
-        }
-
-        .footer-item{
-            float: left;
-            width: 25%;
-            font-family: fantasy;
-        }
-
-        #random-meal-title{
-            font-family:cursive;
-            color: maroon;
-        }
-
-    </style>
+   <main>
+<aside class="side">
+    <ul id="new-recipes">
+        <li>new recipe review goes here</li>
+        <li>another recipe recipe here...</li>
+    </ul>
+</aside>
 
 <div id="recipes-container">
     <h2 id="random-meal-title">Meal name goes here</h2>
     <h4 id="image-container"><img id="meal-image" alt="detail-image" src=""/></h4>
     <br><p id="random-meal-description">Description goes here</p>
-    <button id="like-recipe">LIKE RECIPE</button>
+    <form id="recipe-form">
+        <label for="description">Enter your own Recipe:</label> <!-- form description -->
+        <textarea id="description"></textarea> <!-- form textarea-->
+        <button type="submit">submit recipe</button>
+    </form>
+    <!-- <button id="like-recipe">LIKE RECIPE</button> -->
 </div>
+</main>
     <footer>
         <ul id="footer-list">
             <li class="footer-item">Submit Feedback</li>

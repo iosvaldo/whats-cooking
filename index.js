@@ -13,3 +13,16 @@ function loadRandomMeal(data){
         let mealDescription = document.querySelector('#random-meal-description');
         mealDescription.textContent = meals.strDescription;
 }}
+
+let recipeForm = document.getElementById("recipe-form");
+let recipeDescription = document.getElementById("description");
+let newRecipes = document.getElementById("new-recipes");
+
+recipeForm.addEventListener("submit",function(e){
+    e.preventDefault();
+    let newReview = document.createElement("li");
+    newReview.innerText = description.value
+    newRecipes.append(newReview)
+    e.target.reset()
+    console.log("submit")
+})

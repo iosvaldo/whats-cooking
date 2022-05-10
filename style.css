@@ -1,12 +1,73 @@
 body{
+    margin: 20px;
+}
+
+main {
+    display:flex;
+    grid-template-columns: 2fr 8fr
+}
+
+header{
     text-align: center;
-    font-size:5rem;
+    font-family: fantasy;
 }
 
-#nav-list {
-   background-color: lightblue; 
+#recipes-container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
-    font-size:5rem;
+ul{
+    list-style-type: none;
+}
+
+footer{
+    text-align: center;
+}
+
+#image-container{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    display: inline;
+}
+
+img{
+    align-items: center;
+    text-align: center;
+}
+
+#footer-list{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer li{
+    background-color: cornflowerblue;
+}
+
+.footer-item{
+    float: left;
+    width: 25%;
+    font-family: fantasy;
+}
+
+#random-meal-title{
+    font-family:cursive;
+    color: maroon;
+}
+
+.side > ul >li {
+    border: 1px solid rgb(17, 17, 17);
+    background-color: rgb(241, 246, 244);
+    display: inline-block;
+    border-radius: 20% 10%;
+    line-height: 100%;
+    padding:0 0 3px 0;
+    font-size: 1.25rem;;
+    box-shadow: 6px 8px 9px -3px rgba(0,0,0,0.71);
+}
+
+ul {
+    background-color: rgb(245, 213, 117);
 }
