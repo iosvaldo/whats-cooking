@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
+        <img id="header-image" src="/images/tableware-g56a78193d_1920.png">
         <h1>What's Cooking?</h1>
-        <h3>Random meal ideas for when you're waffling</h3>
+        <h2>Random meal ideas for when you're waffling</h2>
     </header>
     <style>
         body{
@@ -20,6 +21,11 @@
         header{
             text-align: center;
             font-family: fantasy;
+        }
+
+        #header-image{
+            height: 150px;
+            width: auto;
         }
 
         #recipes-container{
@@ -39,7 +45,7 @@
             display: inline;
         }
 
-        img{
+        #meal-image{
             align-items: center;
             text-align: center;
             width: 400px;
@@ -49,10 +55,11 @@
         #footer-list{
             padding-top: 20px;
             padding-bottom: 10px;
+            background-color: lightblue;
         }
 
         footer li{
-            background-color: cornflowerblue;
+            background-color: lightblue;
         }
 
         .footer-item{
@@ -66,20 +73,59 @@
             color: maroon;
         }
 
+        #random-meal-instructions{
+            padding-top: 15px;
+            padding: 0px 50px;
+            line-height: 1.5;
+        }
+
+        button{
+            padding: 20px;
+            font-family: fantasy;
+            color: black;
+            background-color: blanchedalmond;
+        }
+
+        #ingredient-list{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #ingredient-list li{
+            flex-direction: row;
+        }
+
+        #ingredient-header{
+            font-family: fantasy;
+            font-size: 20px;
+            color: navy;
+            padding-top: 25px;
+        }
+
     </style>
 
 <div id="recipes-container">
     <h2 id="random-meal-title">Meal name goes here</h2>
     <h4 id="image-container"><img id="meal-image" alt="detail-image" src=""/></h4>
-    <br><p id="random-meal-description">Description goes here</p>
+    <br><p id="random-meal-instructions">Instructions</p>
     <button id="like-recipe">LIKE RECIPE</button>
+    <p id="ingredient-header">What you'll need:</p>
+    <ul id="ingredient-list"></ul>
+</div>
+
+<!-- <div id="ingredients-container">
+    <h3>Ingredients:</h3>
+    <img id="ingredient-img1" src=""/>
+    <img id="ingredient-img1" src=""/>
+    <img id="ingredient-img1" src=""/> -->
+
 </div>
     <footer>
         <ul id="footer-list">
-            <li class="footer-item">Submit Feedback</li>
-            <li class="footer-item">View Ingredients</li>
-            <li class="footer-item">View Cooking Instructions</li>
-            <li class="footer-item">Rate this Recipe</li>
+            <li class="footer-item" id="footer1">Submit Feedback</li>
+            <li class="footer-item" id="footer2">View Ingredients</li>
+            <li class="footer-item" id="footer3">View Cooking Instructions</li>
+            <li class="footer-item" id="footer4">Rate this Recipe</li>
         </ul>
     </footer>
     </body>
