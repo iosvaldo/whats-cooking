@@ -1,7 +1,6 @@
 
 fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then(response => response.json())
-    // .then(data => console.log(data));
     .then(data => loadRandomMeal(data));
     
 
@@ -55,7 +54,7 @@ const fullStar = '★';
 
 
 let recipeForm = document.getElementById("recipe-form");
-let recipeDescription = document.getElementById("description");
+let recipeDescription = document.getElementById("floatingTextarea");
 let newRecipes = document.getElementById("new-recipes");
 
 recipeForm.addEventListener("submit",function(e){
@@ -67,10 +66,6 @@ recipeForm.addEventListener("submit",function(e){
     console.log("submit")
     //like button
      let likeBtn = document.createElement("button");
-    //  let likeText = document.createElement("p")
-    //  likeText.innerText = "Likes"
-    //  newReview.append(likeBtn)
-    
         newReview.append(likeBtn)
         likeBtn.innerText = 0;
         likeBtn.addEventListener("click",incrementBtn)
@@ -80,6 +75,17 @@ recipeForm.addEventListener("submit",function(e){
     let num2 = num + 1;
     e.target.innerText = num2;
 }
+let staticLi = document.querySelectorAll(".staticLi")
+
+document.addEventListener("DOMContentLoaded", function(){
+   for(const item of staticLi){
+     let likeBtn = document.createElement("button");
+        item.append(likeBtn)
+        likeBtn.innerText = 0;
+        likeBtn.addEventListener("click",incrementBtn)
+   }
+   
+})
  
 
 const starCollection = document.getElementsByClassName("glyph");
@@ -97,3 +103,4 @@ function addYourReview(e){
         star.className = "nonactivated-star";
     }
 };
+

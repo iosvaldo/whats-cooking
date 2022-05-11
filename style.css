@@ -14,9 +14,17 @@ header{
     width: auto;
 }
 
-#recipes-container{
+#recipe-form{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#new-recipes{
+    text-align: center;
+}
+
+#static-recipes{
+    text-align: center;
 }
 
 ul{
@@ -184,6 +192,8 @@ ul {
 
 .carousel-inner{
     display:block;
+    width:50%;
+    margin:auto;
 }
 
 .carousel-caption > h5  {
@@ -205,19 +215,10 @@ ul {
 
 .carousel-img{
     margin:auto;
-    width:50%;
-}
-
-.mb-3{
- margin:auto;
- width:50%;
+    width:1%;
 }
 
 .text-area{
 resize: both;
   overflow: auto;
-}
-
-#carouselExampleDark{
-    background-color: rgb(246, 190, 106);
 }
