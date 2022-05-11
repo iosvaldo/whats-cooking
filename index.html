@@ -13,7 +13,7 @@
     <header>
         <img id="header-image" src="/images/tableware-g56a78193d_1920.png">
         <h1>What's Cooking?</h1>
-        <h2>Random meal ideas for when you're waffling</h2>
+        <h2>Random meal ideas for when you're in a pickle</h2>
     </header>
 
 <div id="recipes-container">
@@ -58,8 +58,9 @@
     }
 
     #footer-list{
+        margin-top: 50px;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         background-color: lightblue;
     }
 
@@ -69,6 +70,7 @@
 
     .footer-item{
         font-family: fantasy;
+        text-align: center;
         font-size: 12px;
     }
 
@@ -136,25 +138,54 @@
     }
 
     #grocery-list-container{
-        background-color: black;
+        background-color: #35593e;
         padding-bottom: 15px;
     }
 
     #grocery-list-items{
         list-style-type: disc;
-        font-size: 15px;
+        font-size: 18px;
         font-family: fantasy;
         color: white;
     }
 
 .hidden{
     display: none;
+}
 
+.activated-star {
+  color: goldenrod;
+  outline-color: black;
+  font-size: 1.75em;
+}
+
+.notactivated-star{
+    font-size: 1.75em;
+    color: white;
+}
+
+#star-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glyph{
+    align-items: center;
+    text-align: center;
+    font-size: 1.75em;
 }
 
 </style>
     <h2 id="random-meal-title">Meal name goes here</h2>
     <h4 id="image-container"><img id="meal-image" alt="detail-image" src=""/></h4>
+    <ul id="star-container">
+        <li class="notactive glyph" style="font-size: 1.75em;">&#9734;</li>
+        <li class="notactive glyph" style="font-size: 1.75em;">&#9734;</li>
+        <li class="notactive glyph" style="font-size: 1.75em;">&#9734;</li>
+        <li class="notactive glyph" style="font-size: 1.75em;">&#9734;</li>
+        <li class="notactive glyph" style="font-size: 1.75em;">&#9734;</li>
+    </ul>
     <p span class="ingredients"><span class="ingredients1">Ingredients:</span><br>Click on any ingredient to add it to your personal grocery list</p>
     <ul id="ingredient-list"></ul>
     <p><span class="ingredients1">Instructions:</span><br><span id="random-meal-instructions">Instructions</span></p>

@@ -21,16 +21,12 @@ function loadRandomMeal(data){
         console.log(newArray);
         // const substring = "strIngredient";
         const slicedArray = newArray.slice(9, 17);
-        // let ingredientsArray = [];
 
         slicedArray.forEach(item => {
-            // const listItem = document.createElement('li');
-            // listItem.textContent = item;
             if(item !== ""){
             const btn = document.createElement('button');
             ulIngredients.appendChild(btn);
             btn.textContent = item;
-            // listItem.append(btn)
             btn.addEventListener('click', addToGroceryList)
             }
         });
@@ -46,71 +42,28 @@ function loadRandomMeal(data){
     document.querySelector('#grocery-list-items').appendChild(li);
     groceryListContainer.classList.remove("hidden");
 
-    // li.addEventListener('click', deleteItem)
+    li.addEventListener('click', removeItem)
   }
 
-  function deleteItem(e){
+  function removeItem(e){
     e.target.parentNode.remove()
   }
-    //     const groceryItem = document.createElement('li');
-    //     groceryItem.textContent = e.target.value();
-    //     const groceryListUl = document.querySelector('#grocery-list-items');
-    //     groceryListUl.appendChild(groceryItem);
-    // }
 
+const emptyStar = '☆';
+const fullStar = '★';
 
-    
-        // for(const item of slicedIngredients){
-        //     console.log(newItem);
-            // const listItem = document.createElement('li');
-            // listItem.textContent = meals.newItem;
-            // ulIngredients.appendChild(listItem);
-    
-    // const ingredients = asArray.filter(meal => {
-    //     meal.includes('strIngredient');
-    // });
-    // console.log(ingredients);
+const starCollection = document.getElementsByClassName("glyph");
+for(const star of starCollection){
+    star.addEventListener("click", addYourReview);
+}
 
-
-        // let ingredients = meals.text.includes('strIngredient');
-        //     for(ingredient in ingredients){
-        //         item.innerText = mealIngredients.item;
-        //         ingredientList.append(item);
-    
-
-
-        // let mealId = meals.idMeal;
-        // www.themealdb.com/api/json/v1/1/lookup.php?i=`${mealId}`
-        
-//         const ingredientList = document.querySelector('#ingredient-list');
-        
-//         const ingredientItem1 = document.createElement('li');
-//         const ingredientItem2 = document.createElement('li');
-//         const ingredientItem3 = document.createElement('li');
-//         const ingredientItem4 = document.createElement('li');
-//         const ingredientItem5 = document.createElement('li');
-//         const ingredientItem6 = document.createElement('li');
-
-//         ingredientItem1.innerText = meals.strIngredient1;
-//         ingredientItem2.innerText = meals.strIngredient2;
-//         ingredientItem3.innerText = meals.strIngredient3;
-//         ingredientItem4.innerText = meals.strIngredient4;
-//         ingredientItem5.innerText = meals.strIngredient5;
-//         ingredientItem6.innerText = meals.strIngredient6;
-//         ingredientList.append(ingredientItem1, ingredientItem2, ingredientItem3, ingredientItem4, ingredientItem5, ingredientItem6);
-//     }
-// }
-
-
-// function renderIngredients(data){
-//     let ingredients = data.meals.slice(9, 20);
-//     ingredientItem = document.createElement('li');
-//     const ul = document.querySelector('#ingredient-list');
-
-
-
-//     ul.appendChild(ingredient);
-// }
-
-
-
+function addYourReview(e){
+    const star = e.target;
+    if (star.innerText === emptyStar) {
+        star.innerText = fullStar;
+        star.className = "activated-star";
+    } else {
+        star.innerText = emptyStar;
+        star.className = "nonactivated-star";
+    }
+};
