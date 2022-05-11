@@ -1,11 +1,7 @@
 body{
-    margin: 20px;
-}
-
-main {
-    display:flex;
-    grid-template-columns: auto;
-    grid-template-rows:30px 40px 80px 80px ;
+    margin: auto;
+    background-color: #9fc5e4;
+    padding: 5px;
 }
 
 header{
@@ -15,15 +11,11 @@ header{
 
 #recipes-container{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 ul{
     list-style-type: none;
-}
-
-footer{
-    text-align: center;
 }
 
 #image-container{
@@ -37,6 +29,10 @@ img{
     align-items: center;
     text-align: center;
 }
+/* |||||| FOOTER |||||||| */
+footer{
+    text-align: center;
+}
 
 #footer-list{
     padding-top: 20px;
@@ -45,12 +41,17 @@ img{
 
 footer li{
     background-color: cornflowerblue;
+    text-align: center;
 }
 
 .footer-item{
     float: left;
     width: 25%;
+    margin:auto;
     font-family: fantasy;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
 }
 
 #random-meal-title{
@@ -62,7 +63,7 @@ footer li{
     border: 1px solid rgb(17, 17, 17);
     background-color: rgb(241, 246, 244);
     display: inline-block;
-    border-radius: 20% 10%;
+    border-radius: 5px;
     line-height: 100%;
     padding:0 0 3px 0;
     font-size: 1.25rem;;
@@ -71,6 +72,7 @@ footer li{
 
 ul {
     background-color: rgb(245, 213, 117);
+    margin:1%;
 }
 
 #meal-image{
@@ -89,4 +91,30 @@ ul {
 .carousel-caption > p  {
  color:white;
  background-color:rgba(0,0,0,0.71);
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+img{
+    margin:auto;
+    width:50%;
+}
+
+.mb-3{
+ margin:auto;
+ width:50%;
+}
+
+.text-area{
+resize: both;
+  overflow: auto;
+}
+
+#carouselExampleDark{
+    background-color: rgb(246, 190, 106);
 }
