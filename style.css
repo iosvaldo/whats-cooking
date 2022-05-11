@@ -4,7 +4,8 @@ body{
 
 main {
     display:flex;
-    grid-template-columns: 2fr 8fr
+    grid-template-columns: auto;
+    grid-template-rows:30px 40px 80px 80px ;
 }
 
 header{
@@ -70,4 +71,22 @@ footer li{
 
 ul {
     background-color: rgb(245, 213, 117);
+}
+
+#meal-image{
+    display:block;
+}
+
+.carousel-inner{
+    display:block;
+}
+
+.carousel-caption > h5  {
+ color:white;
+  background-color:rgba(0,0,0,0.71);
+}
+
+.carousel-caption > p  {
+ color:white;
+ background-color:rgba(0,0,0,0.71);
 }
