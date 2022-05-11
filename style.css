@@ -1,87 +1,164 @@
-        /* body{
-            margin: 20px;
-        }
+body{
+    margin: 20px;
+}
 
-        header{
-            text-align: center;
-            font-family: fantasy;
-        }
+header{
+    text-align: center;
+    font-family: fantasy;
+}
 
-        #header-image{
-            height: 150px;
-            width: auto;
-        }
+#header-image{
+    height: 150px;
+    width: auto;
+}
 
-        #recipes-container{
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-        }
+#recipes-container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-        ul{
-            list-style-type: none;
-        }
+ul{
+    list-style-type: none;
+}
 
-        footer{
-            text-align: center;
-        }
+footer{
+    text-align: center;
+    background-color: lightblue;
+}
 
-        #image-container{
-            display: inline;
-        }
+#image-container{
+    display: inline;
+}
 
-        #meal-image{
-            align-items: center;
-            text-align: center;
-            width: 400px;
-            height: 400px;
-        }
+#meal-image{
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
 
-        #footer-list{
-            padding-top: 20px;
-            padding-bottom: 10px;
-            background-color: lightblue;
-        }
+#footer-list{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+}
 
-        footer li{
-            background-color: lightblue;
-        }
+footer li{
+    background-color: lightblue;
+}
 
-        .footer-item{
-            float: left;
-            width: 25%;
-            font-family: fantasy;
-        }
+.footer-item{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 12px;
+}
 
-        #random-meal-title{
-            font-family:cursive;
-            color: maroon;
-        }
+#random-meal-title{
+    font-family:cursive;
+    color: maroon;
+    padding-top: 15px;
+}
 
-        #random-meal-instructions{
-            padding-top: 15px;
-            padding: 0px 50px;
-            line-height: 1.5;
-        }
+#random-meal-instructions{
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 1.5;
+}
 
-        button{
-            padding: 20px;
-            font-family: fantasy;
-            color: black;
-            background-color: blanchedalmond;
-        }
+button{
+    padding: 3px;
+    margin-left: 8px;
+    font-family: fantasy;
+    color: black;
+    background-color: blanchedalmond;
+}
 
-        #ingredient-list{
-            display: flex;
-            justify-content: space-around;
-        }
+.after-clicked{
+    pointer-events: none;
+    opacity: 50%;
+}
 
-        #ingredient-list li{
-            flex-direction: row;
-        }
+#ingredient-list{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
 
-        #ingredient-header{
-            font-family: fantasy;
-            font-size: 20px;
-            color: navy;
-            padding-top: 25px;
-        } */
+ul#ingredient-list{
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* #ingredient-header{
+    font-family: fantasy;
+    font-size: 20px;
+    color: navy;
+    padding-top: 45px;
+} */
+
+span.ingredients1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    padding-top: 55px;
+}
+
+.ingredients{
+    text-align: center;
+    line-height: 1.5;
+}
+
+#grocery-list-header{
+    font-family: fantasy;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#grocery-list-container{
+    background-color: #35593e;
+    padding-bottom: 15px;
+}
+
+#grocery-list-items{
+    list-style-type: disc;
+    font-size: 18px;
+    font-family: fantasy;
+    color: white;
+}
+
+.hidden{
+display: none;
+}
+
+.activated-star {
+color: goldenrod;
+outline-color: black;
+font-size: 1.75em;
+}
+
+.notactivated-star{
+font-size: 1.75em;
+color: white;
+}
+
+#star-container{
+display: flex;
+line-height: 1;
+align-items: center;
+justify-items: center;
+justify-content: center;
+cursor:pointer;
+padding-bottom: 30px;
+position:relative;
+left: -23px;
+}
+
+.glyph{
+align-items: center;
+text-align: center;
+font-size: 1.75em;
+}

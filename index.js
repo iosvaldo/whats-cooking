@@ -24,7 +24,7 @@ function loadRandomMeal(data){
 
         slicedArray.forEach(item => {
             if(item !== ""){
-            const btn = document.createElement('button');
+            btn = document.createElement('button');
             ulIngredients.appendChild(btn);
             btn.textContent = item;
             btn.addEventListener('click', addToGroceryList)
@@ -32,7 +32,7 @@ function loadRandomMeal(data){
         });
     }}
 
-    function addToGroceryList(e){
+function addToGroceryList(e){
     const myItem = e.target.textContent;
     e.target.classList.add("after-clicked");
     console.log(e.target.textContent);
@@ -41,13 +41,13 @@ function loadRandomMeal(data){
     li.textContent = myItem;
     document.querySelector('#grocery-list-items').appendChild(li);
     groceryListContainer.classList.remove("hidden");
-
     li.addEventListener('click', removeItem)
-  }
+};
 
-  function removeItem(e){
-    e.target.parentNode.remove()
-  }
+function removeItem(e){
+    console.log(e.target.parentNode);
+    e.target.remove();
+}
 
 const emptyStar = '☆';
 const fullStar = '★';
