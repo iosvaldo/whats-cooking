@@ -1,0 +1,223 @@
+body{
+    margin: auto;
+    background-color: #9fc5e4;
+    padding: 5px;
+}
+
+header{
+    text-align: center;
+    font-family: fantasy;
+}
+
+#header-image{
+    height: 150px;
+    width: auto;
+}
+
+#recipes-container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#image-container{
+    display: inline;
+}
+
+#meal-image{
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    display:block;
+}
+
+#footer-list{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+}
+
+footer li{
+    background-color: lightblue;
+}
+
+.footer-item{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 12px;
+}
+
+#random-meal-title{
+    font-family:cursive;
+    color: maroon;
+    padding-top: 15px;
+}
+
+#random-meal-instructions{
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 1.5;
+}
+
+button{
+    padding: 3px;
+    margin-left: 8px;
+    font-family: fantasy;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+.after-clicked{
+    pointer-events: none;
+    opacity: 50%;
+}
+
+#ingredient-list{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+ul#ingredient-list{
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* #ingredient-header{
+    font-family: fantasy;
+    font-size: 20px;
+    color: navy;
+    padding-top: 45px;
+} */
+
+span.ingredients1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    padding-top: 55px;
+}
+
+.ingredients{
+    text-align: center;
+    line-height: 1.5;
+}
+
+#grocery-list-header{
+    font-family: fantasy;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#grocery-list-container{
+    background-color: #35593e;
+    padding-bottom: 15px;
+}
+
+#grocery-list-items{
+    list-style-type: disc;
+    font-size: 18px;
+    font-family: fantasy;
+    color: white;
+}
+
+.hidden{
+display: none;
+}
+
+.activated-star {
+color: goldenrod;
+outline-color: black;
+font-size: 1.75em;
+}
+
+.notactivated-star{
+font-size: 1.75em;
+color: white;
+}
+
+#star-container{
+display: flex;
+line-height: 1;
+align-items: center;
+justify-items: center;
+justify-content: center;
+cursor:pointer;
+padding-bottom: 30px;
+position:relative;
+left: -23px;
+}
+
+.glyph{
+align-items: center;
+text-align: center;
+font-size: 1.75em;
+}
+
+.side > ul >li {
+    border: 1px solid rgb(17, 17, 17);
+    background-color: rgb(241, 246, 244);
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 100%;
+    padding:0 0 3px 0;
+    font-size: 1.25rem;;
+    box-shadow: 6px 8px 9px -3px rgba(0,0,0,0.71);
+}
+
+ul {
+    background-color: rgb(245, 213, 117);
+    margin:1%;
+}
+
+.carousel-inner{
+    display:block;
+}
+
+.carousel-caption > h5  {
+ color:white;
+  background-color:rgba(0,0,0,0.71);
+}
+
+.carousel-caption > p  {
+ color:white;
+ background-color:rgba(0,0,0,0.71);
+}
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+
+.carousel-img{
+    margin:auto;
+    width:50%;
+}
+
+.mb-3{
+ margin:auto;
+ width:50%;
+}
+
+.text-area{
+resize: both;
+  overflow: auto;
+}
+
+#carouselExampleDark{
+    background-color: rgb(246, 190, 106);
+}
