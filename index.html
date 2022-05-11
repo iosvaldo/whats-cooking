@@ -48,32 +48,32 @@
             <li class="footer-item" id="footer1">New York, NY 10004</li>
   </div>
 
-  <div class="side">
+  <!-- <div class="side">
       <ul id="static-recipes">
         <li>The honey Garlic Salmon is so delicious!</li>
         <li>OMG! we love the Roasted Veggie Kale Salad</li>
     </ul>
-  </div>
-
-  <!-- <div id="recipes-container">
-    <h2 id="random-meal-title">Meal name goes here</h2>
-    <h3 id="image-container"><img id="meal-image" alt="detail-image" src=""/></h3> -->
+  </div> -->
 
     <form id="recipe-form">
         <label for="description">Share your Feedback:</label> <!-- form description -->
-        <div class="text-areas">
-        <textarea id="description"></textarea> <!-- form textarea-->
+        <div class="text-areas form-floating">
+        <textarea id="description" placeholder="Leave a comment here" maxlength = "30"></textarea> <!-- form textarea-->
         </div>
         <button class="btn btn-dark btn-lg" type="submit">Submit Feedback</button>
     </form>
 <!-- |||||||||| Newly added comments/ Feedback |||||||||-->
-    <div>
-        <ul id="new-recipes">
-            <h3>Feedback show here</h3>
-            <li>...</li>
-            <li>...</li>
+ <div class="side">
+      <ul id="new-recipes">
+        <li class="staticLi">The honey Garlic Salmon is so delicious!</li>
+        <li class="staticLi">OMG! we love the Roasted Veggie Kale Salad</li>
     </ul>
-    </div> 
+  </div>
+    <!-- <div>
+        <ul id="new-recipes">
+            <h4>Your comments will show here</h4>
+        </ul>
+    </div>  -->
   </div>  
   <!-- |||||||||| Carousel |||||||||-->
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
