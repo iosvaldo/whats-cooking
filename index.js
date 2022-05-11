@@ -24,25 +24,39 @@ function loadRandomMeal(data){
         // let ingredientsArray = [];
 
         slicedArray.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-            ulIngredients.appendChild(listItem);
-            const btn = document.createElement('button')
-            btn.textContent = " X "
-            listItem.append(btn)
-            btn.addEventListener('click', deleteItem)
+            // const listItem = document.createElement('li');
+            // listItem.textContent = item;
+            if(item !== ""){
+            const btn = document.createElement('button');
+            ulIngredients.appendChild(btn);
+            btn.textContent = item;
+            // listItem.append(btn)
+            btn.addEventListener('click', addToGroceryList)
+            }
         });
-        // const ingredientItems = newArray.filter((item) => item.includes(substring));
-        // // const ingredientItems2 = array2.filter((item) => item.includes(substring));
-        // const slicedIngredients = ingredientItems.slice(0, 5);
-        // // const slicedIngredients2 = ingredientItems2.slice(0, 5);
-        // console.log(slicedIngredients);
-        // console.log(slicedIngredients2);
     }}
 
-    function deleteItem(e){
-        e.target.parentNode.remove()
-    }
+    function addToGroceryList(e){
+    const myItem = e.target.textContent;
+    e.target.classList.add("after-clicked");
+    console.log(e.target.textContent);
+    const groceryListContainer = document.querySelector('#grocery-list-container');
+    const li = document.createElement('li');
+    li.textContent = myItem;
+    document.querySelector('#grocery-list-items').appendChild(li);
+    groceryListContainer.classList.remove("hidden");
+
+    // li.addEventListener('click', deleteItem)
+  }
+
+  function deleteItem(e){
+    e.target.parentNode.remove()
+  }
+    //     const groceryItem = document.createElement('li');
+    //     groceryItem.textContent = e.target.value();
+    //     const groceryListUl = document.querySelector('#grocery-list-items');
+    //     groceryListUl.appendChild(groceryItem);
+    // }
 
 
     

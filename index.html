@@ -43,6 +43,7 @@
 
     footer{
         text-align: center;
+        background-color: lightblue;
     }
 
     #image-container{
@@ -67,14 +68,14 @@
     }
 
     .footer-item{
-        float: left;
-        width: 25%;
         font-family: fantasy;
+        font-size: 12px;
     }
 
     #random-meal-title{
         font-family:cursive;
         color: maroon;
+        padding-top: 15px;
     }
 
     #random-meal-instructions{
@@ -84,21 +85,28 @@
     }
 
     button{
-        padding: 10px;
+        padding: 3px;
+        margin-left: 8px;
         font-family: fantasy;
         color: black;
         background-color: blanchedalmond;
     }
 
+    .after-clicked{
+        pointer-events: none;
+        opacity: 50%;
+    }
+
     #ingredient-list{
         display: flex;
+        padding-top: 10px;
         justify-content: space-around;
     }
 
-    #ingredient-list li{
+    ul#ingredient-list{
         flex-direction: row;
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     #ingredient-header{
@@ -111,7 +119,7 @@
     .ingredients1{
         text-align: center;
         font-family: fantasy;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .ingredients{
@@ -119,10 +127,35 @@
         line-height: 1.5;
     }
 
+    #grocery-list-header{
+        font-family: fantasy;
+        padding-top: 15px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    #grocery-list-container{
+        background-color: black;
+        padding-bottom: 15px;
+    }
+
+    #grocery-list-items{
+        list-style-type: disc;
+        font-size: 15px;
+        font-family: fantasy;
+        color: white;
+    }
+
+.hidden{
+    display: none;
+
+}
+
 </style>
     <h2 id="random-meal-title">Meal name goes here</h2>
     <h4 id="image-container"><img id="meal-image" alt="detail-image" src=""/></h4>
-    <p span class="ingredients"><span class="ingredients1">Ingredients:</span><br>Add any item to your personal grocery list</p>
+    <p span class="ingredients"><span class="ingredients1">Ingredients:</span><br>Click on any ingredient to add it to your personal grocery list</p>
     <ul id="ingredient-list"></ul>
     <p><span class="ingredients1">Instructions:</span><br><span id="random-meal-instructions">Instructions</span></p>
     <!-- <button id="like-recipe">LIKE RECIPE</button> -->
@@ -135,9 +168,16 @@
     <img id="ingredient-img1" src=""/> -->
 <!-- </div> -->
 
+<div class="hidden" id="grocery-list-container">
+    <p id="grocery-list-header">My Grocery List:</p>
+    <ul id="grocery-list-items"></ul>
+</div>
+
     <footer>
         <ul id="footer-list">
-            <li class="footer-item" id="footer1">What's Baking?</li>
+            <li class="footer-item" id="footer1">What's Cooking?</li>
+            <li class="footer-item" id="footer1">11 Broadway, Floor 2</li>
+            <li class="footer-item" id="footer1">New York, NY 10004</li>
         </ul>
     </footer>
     </body>
