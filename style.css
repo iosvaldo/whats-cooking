@@ -1,0 +1,87 @@
+        body{
+            margin: 20px;
+        }
+
+        header{
+            text-align: center;
+            font-family: fantasy;
+        }
+
+        #header-image{
+            height: 150px;
+            width: auto;
+        }
+
+        #recipes-container{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        #image-container{
+            display: inline;
+        }
+
+        #meal-image{
+            align-items: center;
+            text-align: center;
+            width: 400px;
+            height: 400px;
+        }
+
+        #footer-list{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-color: lightblue;
+        }
+
+        footer li{
+            background-color: lightblue;
+        }
+
+        .footer-item{
+            float: left;
+            width: 25%;
+            font-family: fantasy;
+        }
+
+        #random-meal-title{
+            font-family:cursive;
+            color: maroon;
+        }
+
+        #random-meal-instructions{
+            padding-top: 15px;
+            padding: 0px 50px;
+            line-height: 1.5;
+        }
+
+        button{
+            padding: 20px;
+            font-family: fantasy;
+            color: black;
+            background-color: blanchedalmond;
+        }
+
+        #ingredient-list{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #ingredient-list li{
+            flex-direction: row;
+        }
+
+        #ingredient-header{
+            font-family: fantasy;
+            font-size: 20px;
+            color: navy;
+            padding-top: 25px;
+        }
