@@ -1,7 +1,6 @@
 
 fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then(response => response.json())
-    // .then(data => console.log(data));
     .then(data => loadRandomMeal(data));
 
     const newRecipeBtn = document.querySelector('#newRecipeBtn');    
@@ -91,7 +90,7 @@ for(let star of starCollection){
 
 
 let recipeForm = document.getElementById("recipe-form");
-let recipeDescription = document.getElementById("description");
+let recipeDescription = document.getElementById("floatingTextarea");
 let newRecipes = document.getElementById("new-recipes");
 
 recipeForm.addEventListener("submit",function(e){
@@ -101,17 +100,28 @@ recipeForm.addEventListener("submit",function(e){
     newRecipes.append(newReview)
     e.target.reset()
     console.log("submit")
-    let likeBtn = document.createElement("button");
-    
-    newReview.append(likeBtn)
-    likeBtn.innerText = 0;
-    likeBtn.addEventListener("click",incrementBtn)
+    //like button
+     let likeBtn = document.createElement("button");
+        newReview.append(likeBtn)
+        likeBtn.innerText = 0;
+        likeBtn.addEventListener("click",incrementBtn)
 })
     function incrementBtn(e) {
     let num = parseInt(e.target.innerText)
     let num2 = num + 1;
     e.target.innerText = num2;
 }
+let staticLi = document.querySelectorAll(".staticLi")
+
+document.addEventListener("DOMContentLoaded", function(){
+   for(const item of staticLi){
+     let likeBtn = document.createElement("button");
+        item.append(likeBtn)
+        likeBtn.innerText = 0;
+        likeBtn.addEventListener("click",incrementBtn)
+   }
+   
+})
  
 function addReview(e){
     console.log(e.target.innerHTML);

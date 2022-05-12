@@ -57,47 +57,59 @@
         <label for="description" id="formdescription">Share your feedback!</label> <!-- form description -->
         <div class="text-areas">
         <textarea id="description"></textarea> <!-- form textarea-->
-        </div>
-        <button class="btn btn-dark btn-lg" type="submit">Submit Feedback</button>
-    </form>
+
+<div class="hidden" id="grocery-list-container">
+    <p id="grocery-list-header">My Grocery List:</p>
+    <ul id="grocery-list-items"></ul>
+</div>
+
+    <footer>
+        <ul id="footer-list">
+            <li class="footer-item" id="footer1">What's Cooking?</li>
+            <li class="footer-item" id="footer1">11 Broadway, Floor 2</li>
+            <li class="footer-item" id="footer1">New York, NY 10004</li>
+  </div>
+
 <!-- |||||||||| Newly added comments/ Feedback |||||||||-->
-    <div>
-        <ul id="new-recipes">
-            <!-- <h3>Feedback show here</h3>
-            <li>...</li>
-            <li>...</li> -->
-          
+ <div class="side">
+      <ul id="new-recipes">
+        <li class="staticLi">The honey Garlic Salmon is so delicious!</li>
+        <li class="staticLi">OMG! we love the Roasted Veggie Kale Salad</li>
     </ul>
-    </div> 
+  </div>
+    <!-- <div>
+        <ul id="new-recipes">
+            <h4>Your comments will show here</h4>
+        </ul>
+    </div>  -->
   </div>  
-<!-- |||||||||| Carousel |||||||||-->
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!-- |||||||||| Carousel |||||||||-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/home-cooking.jpg" class="carousel-img d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Cooking made me Happier</h5>
+        <p>What's Cooking helped me discover meals that I can share with the people I love.</p>
+      </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/home-cooking.jpg" class="carousel-img d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Cooking made me Happier</h5>
-          <p>What's Cooking helped me discover meals that I can share with the people I love.</p>
-        </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/couple-cooking.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Spice up your love life</h5>
+        <p>We us What's Cooking meals to suprises eachother with interesting new dishes.</p>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="images/couple-cooking.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Spice up your love life</h5>
-          <p>We us What's Cooking meals to suprises eachother with interesting new dishes.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/family-home-cooking.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Fun activity for all</h5>
-          <p>We just love cooking as a family. What's Cooking makes finding a new meals so easy. Thank you!</p>
-        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/family-home-cooking.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fun activity for all</h5>
+        <p>We just love cooking as a family. What's Cooking makes finding a new meals so easy. Thank you!</p>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -110,12 +122,16 @@
     </button>
     </div>
   </div>
-<div>
-    <ul id="footer-list">
-        <li class="footer-item" id="footer1">What's Cooking?</li>
-        <li class="footer-item" id="footer1">11 Broadway, Floor 2</li>
-        <li class="footer-item" id="footer1">New York, NY 10004</li>
-</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
 <!-- |||||| Footer ||||| -->
     <!-- <footer> -->
         <!-- <ul id="footer-list footer-item">
