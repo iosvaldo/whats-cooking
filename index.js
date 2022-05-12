@@ -42,22 +42,19 @@ function loadRandomMeal(data){
             btn.addEventListener('click', addToGroceryList)
             }
         });}
-
     }
-const groceryListContainer = document.querySelector('#grocery-list-container');
-// const star1 = document.querySelector('#1');
-// const star2 = document.querySelector('#2');
-// const star3 = document.querySelector('#3');
-// const star4 = document.querySelector('#4');
-// const star5 = document.querySelector('#5');
 
+const listButton = document.querySelector('#buttonId');
+const groceryListContainer = document.querySelector('#grocery-list-container');
 
 function addToGroceryList(e){
+    console.log(e);
     const myItem = e.target.textContent;
     e.target.classList.add("after-clicked");
     console.log(e.target.textContent);
     const li = document.createElement('li');
     li.innerHTML = myItem;
+    li.style.paddingBottom = "7px";
     const closeBtn = document.createElement("button");
     closeBtn.textContent = "X";
     closeBtn.classList.add("close");
@@ -69,7 +66,7 @@ function addToGroceryList(e){
 
 function removeItem(e){
     console.log(e);
-    e.target.parentNode.style.opacity = 1;
+    e.target.parentNode.style.opacity = "1";
     e.target.parentNode.remove();
     e.target.remove();
 }
@@ -82,11 +79,6 @@ const starSpans = document.querySelectorAll('.star');
 for(let star of starCollection){
     star.addEventListener("click", addReview);
 }
-
-// const starCollection = document.getElementsByClassName("glyph");
-// starCollection.addEventListener('click' , event => {
-//     console.log(event.target)
-// })
 
 
 let recipeForm = document.getElementById("recipe-form");
@@ -131,8 +123,7 @@ function addReview(e){
     let idNum = e.target.attributes.id.value;
     while(idNum >= 1){
         document.getElementById(`${idNum}`).innerText = fullStar;
-        idNum--;
-    }
+        idNum--;}
 }
 
 function resetStars(e){
