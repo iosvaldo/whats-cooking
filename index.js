@@ -115,7 +115,7 @@ let staticLi = document.querySelectorAll(".staticLi")
 
 document.addEventListener("DOMContentLoaded", function(){
    for(const item of staticLi){
-     let likeBtn = document.createElement("button");
+     let likeBtn = document.createElement(" button");
         item.append(likeBtn)
         likeBtn.innerText = 0;
         likeBtn.addEventListener("click",incrementBtn)
