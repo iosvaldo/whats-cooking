@@ -11,7 +11,7 @@ This project aims to help people and their families discover new meals, share th
 #Tech Specificaltion 
 
 We used HTML, CSS, BootStrap 5, and Javascript for this SPA as our technologies. 
-We fetched the data using a public API: https://www.themealdb.com/api/json/v1/1/random.php
+We fetched the data using a public API: https://www.themealdb.com/api/json/v1/1/random.php.
 We've included DOM events, "click" for our feedback reviews, and for adding ingredients to the grocery list. "Submit" for when customers leave a review. 
 
 #Conclusion
