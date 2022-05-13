@@ -13,6 +13,10 @@ html{
     text-decoration: none;
 }
 
+.btn{
+    margin-bottom: 1em;
+}
+
 .jump-link:hover{
     font-weight: bold;
     color: white;
@@ -164,6 +168,10 @@ button{
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+#description{
+    margin-top: 2em;
 }
 
 #ingredient-list{
