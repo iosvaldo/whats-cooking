@@ -95,6 +95,10 @@ button{
     font-family: fantasy;
 }
 
+.btn{
+    margin-bottom:1em;
+}
+
 #rateOrRenderRecipeContainer{
     width: 600px;
     background-color: #507e8d;
@@ -121,12 +125,19 @@ button{
     background-color: white;
     border: 1px solid black;
     color: black;
+
+}
+
+#description{
+margin-top: 2em;
 }
 
 #feedback-container{
     padding-top: 30px;
     background-image: url("images/ingredients.png");
     padding-bottom: 30px;
+    text-align: center;
+    margin-bottom:5px;
 }
 
 #ingredient-list{
