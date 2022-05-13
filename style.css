@@ -8,7 +8,7 @@ h2{
 }
 #logo{
     align-items: center;
-    height: 300px;
+    height: 350px;
 }
 
 header{
@@ -43,12 +43,15 @@ footer{
     text-align: center;
     width: 600px;
     height: 600px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 2px solid black;
 }
 
 #image-container{
     width: 100%;
-    display:block;}
+    display:block;
+}
 
 #footer-list{
     margin-top: 50px;
@@ -64,17 +67,20 @@ footer li{
 .footer-item{
     font-family: fantasy;
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #random-meal-title{
-    color: black;
     padding: 15px;
+    font-size: 40px;
+color: black;
+font-weight: bold;
 }
 
 #random-meal-instructions{
     padding-right: 50px;
     padding-left: 50px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -106,7 +112,8 @@ button{
     align-items: center;
     text-align: center;
     margin: auto;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 .after-clicked{
@@ -118,6 +125,7 @@ button{
     padding: 5px;
     background-color: white;
     border: 1px solid black;
+    text-align: center;
 }
 
 #formdescription{
@@ -135,9 +143,10 @@ margin-top: 2em;
 #feedback-container{
     padding-top: 30px;
     background-image: url("images/ingredients.png");
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
-    margin-bottom:5px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #ingredient-list{
@@ -184,7 +193,7 @@ p.ingredients{
     margin-bottom: 40px;
     background-image: url("images/test.png");
     background-position: left;
-    background-size: cover;
+    background-size: 90%;
 }
 
 #grocery-list-items{
@@ -196,17 +205,6 @@ p.ingredients{
 .hidden{
 display: none;
 }
-
-/* .activated-star {
-color: goldenrod;
-outline-color: black;
-font-size: 1.75em;
-}
-
-.notactivated-star{
-font-size: 1.75em;
-color: white;
-} */
 
 #star-container{
 display: flex;
@@ -228,31 +226,30 @@ color: white;
 }
 
 .side > ul >li {
-    border: 1px solid rgb(17, 17, 17);
-    background-color: rgb(241, 246, 244);
-    display: inline-block;
-    border-radius: 5px;
-    line-height: 100%;
-    padding:0 0 3px 0;
-    font-size: 1.25rem;
-    box-shadow: 6px 8px 9px -3px rgba(0,0,0,0.71);
+border: 1px solid rgb(17, 17, 17);
+background-color: rgb(241, 246, 244);
+display: inline-block;
+border-radius: 5px;
+line-height: 100%;
+padding:0 0 3px 0;
+font-size: 1.25rem;
+box-shadow: 6px 8px 9px -3px rgba(0,0,0,0.71);
 }
 
 ul {
-    /* background-color: rgb(245, 213, 117); */
-    margin:1%;
+margin:1%;
 }
 
 .carousel-inner{
-    width: 50%;
-    display: block;
-    margin: auto;
+width: 50%;
+display: block;
+margin: auto;
 }
 
 
 .carousel-img{
-    display: block;
-    margin: 0 auto;
+display: block;
+margin: 0 auto;
 }
 
 .carousel-caption > h5  {
@@ -261,19 +258,11 @@ ul {
   background-color:rgba(0,0,0,0.71);
 }
 
-
 .carousel-caption > p  {
  color:white;
  display: block;
  background-color:rgba(0,0,0,0.71);
 }
-
-/* .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-} */
 
 .carousel-img{
     margin:auto;
