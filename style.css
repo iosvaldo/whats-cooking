@@ -3,12 +3,37 @@ body{
     background-color: white;
     padding: 5px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.jump-link{
+    color: white;
+    text-decoration: none;
+}
+
+.jump-link:hover{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
 h2{
     font-family: fantasy;
 }
 #logo{
     align-items: center;
-    height: 350px;
+    width: 37%;
+    padding-top: 130px;
+}
+
+.transition{
+    transition: margin-top 3s;
+    transition-timing-function: ease-in;
+    background-image: none;
+    background-color: "#507e8d";
+    height: 60px;
 }
 
 header{
@@ -25,17 +50,8 @@ ul{
     list-style-type: none;
 }
 
-footer{
-    text-align: center;
-    background-color: lightblue;
-}
-
 #image-container{
     display: inline;
-}
-
-.close{
-    padding-left: 7px;
 }
 
 #meal-image{
@@ -53,21 +69,31 @@ footer{
     display:block;
 }
 
-#footer-list{
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: lightblue;
+#footer-container{
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.4s;
+    background-image: url("images/footer-new.png");
+    background-size: cover;
 }
 
-footer li{
-    background-color: lightblue;
+#footer-list{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-item{
     font-family: fantasy;
+    padding-bottom: 15px;
+    align-items: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    color: white;
 }
 
 #random-meal-title{
@@ -177,7 +203,7 @@ p.ingredients{
     border: 1px solid black;
     border-radius: 2cm;
     width: 85%;
-    min-height: 100px;
+    min-height: 170px;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -185,6 +211,10 @@ p.ingredients{
     background-image: url("images/test.png");
     background-position: left;
     background-size: 90%;
+}
+
+.groceryItems{
+    padding-bottom: 7px;
 }
 
 #grocery-list-items{

@@ -1,4 +1,3 @@
-
 fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then(response => response.json())
     .then(data => loadRandomMeal(data));
@@ -16,6 +15,15 @@ fetch("https://www.themealdb.com/api/json/v1/1/random.php")
         .then(response => response.json())
         .then(data => loadRandomMeal(data));
     });
+
+const footerContainer = document.querySelector('#footer-container');
+const main = document.querySelector('main');
+
+window.addEventListener('scroll', () => {
+            footerContainer.style.height = "60px";
+            footerContainer.style.backgroundColor = "#507e8d";
+            footerContainer.style.backgroundImage = "none";
+});
 
 function loadRandomMeal(data){
     for(meals of data.meals){
@@ -36,40 +44,34 @@ function loadRandomMeal(data){
 
         slicedArray.forEach(item => {
             if(item !== ""){
-            btn = document.createElement('button');
-            ulIngredients.appendChild(btn);
-            btn.textContent = item;
-            btn.addEventListener('click', addToGroceryList)
-            }
-        });}
-    }
+                btn = document.createElement('button');
+                ulIngredients.appendChild(btn);
+                btn.textContent = item;
+                btn.addEventListener('click', clickBtn)
+            }})}}
 
-const listButton = document.querySelector('#buttonId');
 const groceryListContainer = document.querySelector('#grocery-list-container');
+const groceryListUl = document.querySelector('#grocery-list-items'); 
 
-function addToGroceryList(e){
-    console.log(e);
+function clickBtn(e){
+    console.log(e)
+    const targetItem = e.target;
     const myItem = e.target.textContent;
-    e.target.classList.add("after-clicked");
-    console.log(e.target.textContent);
-    const li = document.createElement('li');
-    li.innerHTML = myItem;
-    li.style.paddingBottom = "7px";
     const closeBtn = document.createElement("button");
-    closeBtn.textContent = "X";
-    closeBtn.classList.add("close");
-    li.appendChild(closeBtn);
-    document.querySelector('#grocery-list-items').appendChild(li);
+    let liGrocery = document.createElement('li');
+    closeBtn.textContent = `${myItem}` + "  X";
+    liGrocery.appendChild(closeBtn);
+    liGrocery.classList.add('groceryItems');
+    targetItem.classList.add('after-clicked');
+    groceryListUl.appendChild(liGrocery);
+    let groceryItems = document.querySelectorAll('.groceryItems');
     groceryListContainer.classList.remove("hidden");
-    closeBtn.addEventListener('click', removeItem);
-};
-
-function removeItem(e){
-    console.log(e);
-    e.target.parentNode.style.opacity = "1";
-    e.target.parentNode.remove();
-    e.target.remove();
-}
+    for(li of groceryItems){
+        liGrocery.addEventListener('click', (e) =>{
+            targetItem.classList.remove('after-clicked');
+            console.log(e);
+            e.target.remove();
+});}}
 
 const emptyStar = '☆';
 const fullStar = '★';
@@ -79,7 +81,6 @@ const starSpans = document.querySelectorAll('.star');
 for(let star of starCollection){
     star.addEventListener("click", addReview);
 }
-
 
 let recipeForm = document.getElementById("recipe-form");
 let recipeDescription = document.getElementById("floatingTextarea");
@@ -108,12 +109,10 @@ let staticLi = document.querySelectorAll(".staticLi")
 document.addEventListener("DOMContentLoaded", function(){
    for(const item of staticLi){
      let likeBtn = document.createElement("button");
-        item.append(likeBtn)
+        item.append(likeBtn);
         likeBtn.innerText = 0;
-        likeBtn.addEventListener("click",incrementBtn)
-   }
-   
-})
+        likeBtn.addEventListener("click",incrementBtn);
+}})
  
 function addReview(e){
     console.log(e.target.innerHTML);
