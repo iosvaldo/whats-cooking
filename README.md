@@ -18,4 +18,4 @@ We've included DOM events, "click" for our feedback reviews, and for adding ingr
 
 We worked hard to build this application, and We hope you enjoy it and share it with your family and friends. If you have any questions or concerns, please contact us. Here's a link to the final deployment.
 
-## **Final Deployment Link:**
+## **Final Deployment Link:** https://iosvaldo.github.io/whats-cooking/
